@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,8 +8,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="411dp"
-        android:layout_height="748dp"
+        android:layout_width="417dp"
+        android:layout_height="799dp"
         android:background="#FFFFFF"
         android:orientation="vertical"
         android:weightSum="100"
@@ -23,6 +22,7 @@
             android:layout_height="wrap_content"
             android:background="#FEF4CE"
             android:orientation="horizontal">
+
 
             <TextView
                 android:id="@+id/textView11"
@@ -44,7 +44,7 @@
 
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="289dp"
+                android:layout_width="260dp"
                 android:layout_height="95dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
@@ -56,26 +56,22 @@
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/button"
+        <LinearLayout
+            android:id="@+id/teams"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginTop="50dp"
-            android:background="#ABDDC1"
-            android:text="@string/menu_login"
-            android:textColor="#353637"
-            android:textSize="30dp" />
+            android:layout_height="701dp"
+            android:orientation="vertical"></LinearLayout>
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="201dp"
-            android:layout_marginTop="10dp"
-            android:background="#353637"
-            android:text="@string/menu_signup"
-            android:textColor="#ABDDC1"
-            android:textSize="30dp" />
 
     </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="410dp"
+        android:layout_height="68dp"
+        android:background="#87846F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/navigation_items" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

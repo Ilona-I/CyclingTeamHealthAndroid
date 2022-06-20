@@ -17,6 +17,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".LogInActivity"/>
+        <activity android:name=".SignUpActivity"/>
+        <activity android:name=".ProfileActivity"/>
+        <activity android:name=".ChatActivity"/>
+        <activity android:name=".ChatsActivity"/>
+        <activity android:name=".TrainingActivity"/>
+        <activity android:name=".TrainingsActivity"/>
+        <activity android:name=".TeamsActivity"/>
     </application>
 
 </manifest>
